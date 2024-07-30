@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I LOVE YOU 💖</title>
+    <title>I LOVE YOU🥺💓</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -24,6 +24,26 @@
             opacity: 0;
             transform: translateY(30px);
             animation: fadeIn 1.5s ease-in-out forwards, moveUp 1.5s ease-in-out forwards;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        
+        .message .kiss {
+        font-size: 0.5em;
+        animation: kissHover 2s ease-in-out infinite;
+        display: inline-block;
+    }
+        .hearts {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .heart {
+            font-size: 1.5em;
+            color: #ff6b6b;
+            animation: heartPulse 2s ease-in-out infinite;
+            margin: 0 10px;
         }
 
         @keyframes fadeIn {
@@ -43,9 +63,25 @@
                 transform: translateY(0);
             }
         }
+
+        @keyframes heartPulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            50% {
+                transform: scale(1.3);
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="message"><em><b>I LOVE YOU 💓</b></em></div>
+    <div class="message"><em><b>I LOVE YOU😘</b></em></div>
+    <div class="hearts">
+        <span class="heart">❤️</span>
+        <span class="heart">❤️</span>
+        <span class="heart">❤️</span>
+    </div>
 </body>
 </html>
